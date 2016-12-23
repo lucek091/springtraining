@@ -3,18 +3,54 @@ package info.spring.tutorial;
 import java.util.Locale;
 
 public class User {
-	
-/*	public static User getInstance(String name, int age){
-		User user=new User();
-		user.name=name;
-		user.age=age;
-		
-		return user;
-	}*/
 
+
+	public Adress getAdress() {
+		return adress;
+	}
+
+
+	public void setAdress(Adress adress) {
+		this.adress = adress;
+	}
+
+
+	public int getAge() {
+		return age;
+	}
+
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+
+	public Locale getLocale() {
+		return locale;
+	}
+
+
+	public void setLocale(Locale locale) {
+		this.locale = locale;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	private Adress adress;
 	private int age;
-	private String name;
 	private Locale locale;
+	private String name;
+	
+	public User(){}
 
 	public User(int age, String name, Locale locale) {
 		this.age = age;
@@ -22,28 +58,13 @@ public class User {
 		this.locale=locale;
 	}
 
-/*	public int getAge() {
-		return age;
-	}
-
-	public String getName() {
-		return name;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}*/
-	
-//	private User(){}
-	
-/*	public void setName(String name) {
-		this.name = name;
-	}*/
 
 	@Override
 	public String toString() {
-		return "User [age=" + age + ", name=" + name + ", locale=" + locale + "]";
+		return "User [age=" + age + ", name=" + name + ", locale=" + locale + ", adress=" + adress + "]";
 	}
-	
+
+
 	
 
 }

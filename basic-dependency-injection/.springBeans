@@ -13,6 +13,7 @@
 		<config>src/main/resources/userContext.xml</config>
 		<config>src/main/resources/crUserContext.xml</config>
 		<config>src/main/resources/beanContext.xml</config>
+		<config>src/main/resources/context11.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

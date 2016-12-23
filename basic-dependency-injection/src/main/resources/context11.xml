@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="locale" class="java.util.Locale" factory-method="getDefault"></bean>
+
+	<bean id="newUser" class="info.spring.tutorial.User">
+		<property name="age" value="11"></property>
+		<property name="locale" ref="locale"></property>
+		<property name="name" value="Agnieszka"></property>
+		<property name="adress">
+			<bean class="info.spring.tutorial.Adress">
+				<constructor-arg value="Gdansk"></constructor-arg>
+				<constructor-arg value="80-257"></constructor-arg>
+				<constructor-arg value="Slowackiego"></constructor-arg>
+				<constructor-arg value="22"></constructor-arg>
+			</bean>
+		</property>
+	</bean>
+
+
+</beans>
