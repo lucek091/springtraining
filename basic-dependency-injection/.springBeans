@@ -8,6 +8,11 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>src/main/resources/applicationContext.xml</config>
+		<config>src/main/resources/someBeanConfiguration.xml</config>
+		<config>src/main/resources/context.xml</config>
+		<config>src/main/resources/userContext.xml</config>
+		<config>src/main/resources/crUserContext.xml</config>
+		<config>src/main/resources/beanContext.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

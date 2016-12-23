@@ -14,7 +14,7 @@ public class ApplicationSpring {
 		UsersRepository userRepository = appContext.getBean("userRepositorium", UsersRepository.class);
 		
 		User lukasz = userRepository.createUser("Lukasz", 23, "mercedes");
-
+		
 	}
 
 }
